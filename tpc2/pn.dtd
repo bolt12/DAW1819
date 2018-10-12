@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT pn (cabecalho,descritivo,contexto,decisoes) >
+
+<!ELEMENT cabecalho (estado,pai,codigo,titulo) >
+
+<!ELEMENT estado (#PCDATA) >
+
+<!ELEMENT pai (url,nome) >
+<!ELEMENT url (#PCDATA) >
+<!ELEMENT nome (#PCDATA) >
+
+<!ELEMENT codigo (#PCDATA) >
+<!ELEMENT titulo (#PCDATA) >
+
+<!ELEMENT descritivo (descricao,naplicacao,eaplicacao,nexclusao,termos) >
+
+<!ELEMENT descricao (#PCDATA) >
+
+<!ELEMENT naplicacao (nota)+ >
+<!ELEMENT nota (#PCDATA) >
+
+<!ELEMENT eaplicacao (exemplo)+ >
+<!ELEMENT exemplo (#PCDATA) >
+
+<!ELEMENT nexclusao (exclusao)+ >
+<!ELEMENT exclusao (nota, url, nome) >
+
+<!ELEMENT termos (termo)+ >
+<!ELEMENT termo (#PCDATA) >
+
+<!ELEMENT contexto (tipo,transversal,donos,tintervencao,relacionados,legislacao) >
+<!ELEMENT tipo (#PCDATA) >
+<!ELEMENT transversal (#PCDATA) >
+
+<!ELEMENT donos (dono)+ >
+<!ELEMENT dono (sigla, nome) >
+<!ELEMENT sigla (#PCDATA) >
+
+<!ELEMENT tintervencao (comunicar,iniciar) >
+<!ELEMENT comunicar (participante)+ >
+<!ELEMENT iniciar (participante)+ >
+<!ELEMENT participante (sigla, nome) >
+
+<!ELEMENT relacionados (antecessor,sintese,sintetizado,sucessor,suplemento,suplementop) >
+<!ELEMENT antecessor (processo)+ >
+<!ELEMENT sintese (processo)+ >
+<!ELEMENT sintetizado (processo)+ >
+<!ELEMENT sucessor (processo)+ >
+<!ELEMENT suplemento (processo)+ >
+<!ELEMENT suplementop (processo)+ >
+<!ELEMENT processo (url,nome) >
+
+<!ELEMENT legislacao (legis)+ >
+<!ELEMENT legis (tipo,artigo,definicao) >
+<!ELEMENT artigo (#PCDATA) >
+<!ELEMENT definicao (#PCDATA) >
+
+<!ELEMENT decisoes (prazoca,destinof) >
+<!ELEMENT prazoca (prazo,forma,justificacao) >
+<!ELEMENT prazo (#PCDATA) >
+<!ELEMENT forma (#PCDATA) >
+<!ELEMENT justificacao (para)+ >
+<!ELEMENT para (titulo,p) >
+<!ELEMENT p (#PCDATA|link)* >
+<!ELEMENT link (url,nome) >
+
+<!ELEMENT destinof (destino,justificacao) >
+<!ELEMENT destino (#PCDATA) >

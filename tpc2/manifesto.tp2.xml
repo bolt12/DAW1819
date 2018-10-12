@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "manifesto.dtd">
+<manifesto>
+    <meta>
+        <id>web2018::A77628::t2</id>
+        <tit>Estabelecer DTD para processo 750.10.002 - Processamento de matrículas ou inscrições ou em formação</tit>
+        <subtit>Relatório inserido no TPC2 da cadeira de Desenvolvimento de Aplicações Web 2018/19</subtit>
+        <begDate>25/09/18</begDate>
+        <endDate>03/10/18</endDate>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <website>http://www4.di.uminho.pt/~jcr/</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Armando Santos</nome>
+            <email>a77628@alunos.uminho.pt</email>
+            <numero>a77628</numero>
+            <foto path="https://scontent.fopo3-1.fna.fbcdn.net/v/t1.0-9/15439852_1314705308550881_3914792405067568463_n.jpg?_nc_cat=108&amp;oh=9dfc810d0ca6dea7401952652a282beb&amp;oe=5C1D7E12">foto de perfil</foto>
+            <website>https://github.com/bolt12</website>
+        </membro>  
+    </equipa>
+    <resumo>
+        <para>
+            Os <i>Document Type Definition</i> ou <b>DTD</b> permitem validar e uniformizar ficheiros <b>XML</b> e permite o tratamento
+            de informação de uma forma <i>standard</i> e partilhável.
+        </para>
+        <para>
+            Este trabalho contempla a definição de um <b>DTD</b> para o processo 750.10.002, nível de processo de negócio da
+            Administração Pública referente ao processamento de matrículas ou inscrições ou em formação; assim como o <b>DTD</b>
+            para o atual manifesto e o ficheiro <b>XSLT</b> que permite a geração desta página <b>HTML</b>.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado>manifesto.dtd</resultado>
+        <resultado>manifesto.t2.xml</resultado>
+        <resultado>manifesto.xsl</resultado>
+        <resultado>manifesto.t2.html</resultado>
+        <resultado>pn.dtd</resultado>
+    </resultados>
+</manifesto>

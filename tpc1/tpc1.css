@@ -1,0 +1,14 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.indice {
+  background-color: rgb(3, 155, 229);
+}
+
+.page-footer {
+  background-color: rgb(3, 155, 229);
+}
