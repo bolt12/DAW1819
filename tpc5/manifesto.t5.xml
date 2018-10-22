@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "../tpc2/manifesto.dtd">
+<manifesto>
+    <meta>
+        <id>web2018::A77628::t2</id>
+        <tit>Servidor de ficheiros JSON</tit>
+        <subtit>Relatório inserido no TPC5 da cadeira de Desenvolvimento de Aplicações Web 2018/19</subtit>
+        <begDate>09/10/18</begDate>
+        <endDate>16/10/18</endDate>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <website>http://www4.di.uminho.pt/~jcr/</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Armando Santos</nome>
+            <email>a77628@alunos.uminho.pt</email>
+            <numero>a77628</numero>
+            <foto path="https://scontent.fopo3-1.fna.fbcdn.net/v/t1.0-9/15439852_1314705308550881_3914792405067568463_n.jpg?_nc_cat=108&amp;oh=9dfc810d0ca6dea7401952652a282beb&amp;oe=5C1D7E12">foto de perfil</foto>
+            <website>https://github.com/bolt12/DAW1819/tree/master/tpc4</website>
+        </membro>  
+    </equipa>
+    <resumo>
+        <para>
+            Este trabalho consiste na criação de um servidor web capaz de servir vários ficheiros JSON.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado url="manifesto.t5.xml">manifesto.t5.xml</resultado>
+        <resultado url="manifesto.t5.html">manifesto.t5.html</resultado>
+        <resultado url="json">json</resultado>
+        <resultado url="server.js">server.js</resultado>
+    </resultados>
+</manifesto>
