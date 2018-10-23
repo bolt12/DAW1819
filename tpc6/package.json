@@ -1,0 +1,16 @@
+{
+  "name": "tpc6",
+  "version": "1.0.0",
+  "description": "- Data do registo   - prazo   - descrição   - tipo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Armando Santos",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.3",
+    "querystring": "^0.2.0"
+  }
+}

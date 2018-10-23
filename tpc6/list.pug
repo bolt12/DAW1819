@@ -1,0 +1,25 @@
+extends layout
+
+block corpo
+    .card
+        header.card-header.has-background-grey-lighter
+            h1.card-header-title.has-text-primary TODO APP
+        .card-content
+            .content
+                .columns.is-mobile.is-centered
+                each task in tasks
+                    .card(style="margin: 5px;").column.is-centered
+                        header.card-header.has-background-primary
+                            p.card-header-title.is-centered= task.type
+                        .card-content.is-centered.has-background-grey-lighter
+                            p <b>ID</b>: 
+                                span= task.id
+                            p <b>Description</b>: 
+                                span= task.description
+                            p <b>Due in</b>: 
+                                time(datetime= task.due)= task.due
+                            p <b>Registed at</b>: 
+                                time(datetime= task.registed)= task.registed
+                            form.container(action='/delete' method='POST').is-centered
+                                input.w3-input.w3-border.w3-light-grey.is-invisible(type='text', name='id', value=''+task.id )
+                                input.button.is-danger(type='submit' value='Delete').is-centered

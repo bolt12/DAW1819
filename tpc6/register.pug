@@ -1,0 +1,22 @@
+extends layout
+block corpo
+  .content.is-centered
+    .card.is-centered
+      header.card-header.content
+        h3.card-header-title.-is-size-3.has-text-primary Register task
+      .card-content
+       .content
+        form.container(action='/list' method='POST')
+          .container
+            label.has.text-primary
+              b Type: 
+            input.w3-input.w3-border.w3-light-grey(type='text', name='type')
+          .container
+            label.has.text-primary
+              b Description: 
+            input.w3-input.w3-border.w3-light-grey(type='text', name='desc')
+          .container
+            label.has.text-primary
+              b Due: 
+            input.w3-input.w3-border.w3-light-grey(type='text', name='due')
+          input.w3-btn.w3-blue-grey(type='submit' value='Send')

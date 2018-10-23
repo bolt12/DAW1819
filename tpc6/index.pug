@@ -1,0 +1,10 @@
+extends layout
+
+block corpo
+  .content.is-centered
+    h1.is-size-1.has-text-primary-is-centered TODO APP
+      .content
+          form.container(action='/list' method='GET')
+            input.button.has-text-primary(type='submit' value='List')
+          form.container(action='/register' method='GET')
+            input.button.has-text-primary(type='submit' value='Register')
