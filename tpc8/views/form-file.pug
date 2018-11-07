@@ -1,0 +1,36 @@
+extends layout
+block content
+  .w3-container
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3 Upload de um ficheiro
+      .w3-container
+        form.w3-container(id='form' enctype='multipart/form-data')
+          label.w3-teal
+            b Ficheiro
+          input.w3-input.w3-border.w3-light-grey(id='ficheiro' type='file', name='ficheiro')
+          label.w3-teal
+            b Descrição
+          input.w3-input.w3-border.w3-light-grey(id='descricao' type='text', name='desc')
+          input.w3-btn.w3-blue-grey(id='adicionar' type='submit' value='Enviar')
+  .w3-container
+   .w3-card-4
+    header.w3-container.w3-teal
+     h3 Catálogo de ficheiros
+      .w3-container
+       table.w3-table(id='ficheiros')
+        tr
+          th Nome
+          th Descrição
+          th Timestamp
+        tr
+        each ficheiro in ficheiros
+          tr
+            td
+              a(href= "/"+ficheiro.name)= ficheiro.name
+            td= ficheiro.desc
+            td= ficheiro.timestamp
+    footer
+      address gerado por FormApp
+        p
+          a(href='/') Voltar à pagina principal
