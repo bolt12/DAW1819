@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifesto SYSTEM "../tpc2/manifesto.dtd">
+<manifesto>
+    <meta>
+        <id>DWEB2018::Teste::A77628</id>
+        <tit>Teste DAW 18/19</tit>
+        <subtit>Manifesto do teste de DAW</subtit>
+        <begDate>15/01/19</begDate>
+        <endDate>15/01/19</endDate>
+        <supervisor>
+            <nome>José Carlos Ramalho</nome>
+            <website>http://www4.di.uminho.pt/~jcr/</website>
+        </supervisor>
+    </meta>
+    <equipa>
+        <membro>
+            <nome>Armando Santos</nome>
+            <email>a77628@alunos.uminho.pt</email>
+            <numero>a77628</numero>
+            <foto path="https://scontent.fopo3-1.fna.fbcdn.net/v/t1.0-9/15439852_1314705308550881_3914792405067568463_n.jpg?_nc_cat=108&amp;oh=9dfc810d0ca6dea7401952652a282beb&amp;oe=5C1D7E12">foto de perfil</foto>
+            <website>https://github.com/bolt12/DAW1819/tree/master/teste</website>
+        </membro>  
+    </equipa>
+    <resumo>
+        <para>
+            Exercício 1: 
+        </para>
+        <para>
+                Para correr a aplicação é necessário executar o seguinte comando:
+                    'mongoimport --db testeDAW1819 --collection compositores --file compositores.json --jsonArray'
+                De seguida apenas tem que fazer 'npm start'.
+        </para>
+        <para>
+                A porta em que a aplicação se encontra a correr é a 3001.
+        </para>
+        <para> 
+                Teste: curl localhost:3001/api/compositores
+        </para>
+        <para>
+            Exercício 2:
+        </para>
+        <para>
+                QUERIES:
+        </para>
+        <para>
+                1. 
+        </para>
+        <para>
+                Acedi ao endereço "http://clav-test.di.uminho.pt/api/classes/c200/descendencia" 
+                para ir buscar todos os processos na descendencia da classe 200.
+        </para>
+        <para> 
+                De seguida acedi ao endereço "http://clav-test.di.uminho.pt/api/classes/nivel/3"
+                e transferi o dataset.
+        </para>
+        <para> 
+                Com o auxilio dos comandos UNIX: grep  'codigo' 3.json | grep '200\..*' | wc -l
+                Cheguei ao resultado de 22 processos.
+        </para>
+        <para>
+                Para os obter basta remover o comando 'wc -l' do pipeline.
+        </para>
+        <para>
+                2.
+        </para>
+        <para>        
+                Acedi ao endereço: "http://clav-test.di.uminho.pt/api/classes/nivel/4"
+                de modo a obter a lista de processos nivel 4.
+        </para>
+        <para> 
+                Transferi o dataset.
+        </para>
+        <para> 
+                Com o auxilio dos comandos UNIX: wc -l
+                Cheguei ao resultado de 116 processos.
+        </para>
+        <para>
+                3.
+        </para>
+        <para>
+                Com os datasets anteriores (dos niveis 3 e 4), filtrei das entradas apenas os códigos e ordenei-os com o comando
+                'sort' e escrevi um programa Haskell que pega em cada entrada do ficheiro 3 e verifica se existe alguma subdivisão no ficheiro 4.
+        </para>
+        <para>
+                Encontrei 538 registos.
+        </para>
+        <para>
+                APP:
+                </para>
+        <para>
+                Para correr a app é necessário correr o comando 'npm install' e de seguida 'npm start'.
+                A porta em que a aplicação se encontra a correr é a 3001.
+        </para>
+    </resumo>
+    <resultados>
+        <resultado url="manifesto.xml">manifesto.xml</resultado>
+        <resultado url="manifesto.html">manifesto.html</resultado>
+        <resultado url="exercício1.zip">exercício 1 íntegro</resultado>
+        <resultado url="exercicio2_1">exercício 2 - 1</resultado>
+        <resultado url="exercicio2_3.hs">exercício 2 - 1</resultado>
+        <resultado url="exercício2.zip">exercício 2 íntegro</resultado>
+        
+    </resultados>
+</manifesto>
